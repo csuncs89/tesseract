@@ -1083,6 +1083,8 @@ class Tesseract : public Wordrec {
              "image/page.");
   STRING_VAR_H(page_separator, "\f",
                "Page separator (default is form feed control character)");
+  BOOL_VAR_H(find_remove_lines, true,
+             "Find vertical and horizontal line objects and removes them");
 
   // The following parameters were deprecated and removed from their original
   // locations. The parameters are temporarily kept here to give Tesseract

@@ -509,6 +509,9 @@ Tesseract::Tesseract()
       STRING_MEMBER(page_separator, "\f",
                     "Page separator (default is form feed control character)",
                     this->params()),
+      BOOL_MEMBER(find_remove_lines, true,
+                  "Find vertical and horizontal line objects and removes them",
+                  this->params()),
 
       // The following parameters were deprecated and removed from their
       // original
